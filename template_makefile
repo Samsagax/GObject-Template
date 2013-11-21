@@ -1,9 +1,9 @@
 
-GTK_CFLAGS = $(shell pkg-config gtk+-2.0 --cflags)
-GTK_LIBS = $(shell pkg-config gtk+-2.0 --libs)
+GOB_CFLAGS = $(shell pkg-config gobject-2.0 --cflags)
+GOB_LIBS = $(shell pkg-config gobject-2.0 --libs)
 
-CFLAGS = -ansi -pedantic -O2 -Wall $(GTK_CFLAGS)
-LFLAGS = $(GTK_LIBS)
+CFLAGS = -ansi -pedantic -O2 -Wall -Wno-unused-variable $(GOB_CFLAGS)
+LFLAGS = $(GOB_LIBS)
 
 CC = gcc
 RM = rm
