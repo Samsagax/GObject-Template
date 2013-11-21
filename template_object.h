@@ -6,6 +6,9 @@
 #ifndef __<prefix_upper_case>_<typename_upper_case>_H__
 #define __<prefix_upper_case>_<typename_upper_case>_H__
 
+/* Includes */
+#include <glib-object.h>
+
 /*
  * Type macros.
  */
@@ -33,7 +36,7 @@ struct _<prefix_capitalized><typename_capitalized>
   GObject parent_instance;
 
   /* instance members */
-    
+
   /*< private >*/
   <prefix_capitalized><typename_capitalized>Private *priv;
 };

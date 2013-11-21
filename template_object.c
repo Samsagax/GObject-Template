@@ -2,14 +2,12 @@
  * Custom GObject <prefix_capitalized>-Header
  */
 
-#include <glib-object.h>
-
 #include "<prefix_lower_case>_<typename_lower_case>.h"
 #include "<prefix_lower_case>_<typename_lower_case>_private.h"
 
 #define <prefix_upper_case>_<typename_upper_case>_GET_PRIVATE(obj) \
   (G_TYPE_INSTANCE_GET_PRIVATE ((obj), <prefix_upper_case>_TYPE_<typename_upper_case>, \
-                                <prefix_capitalized><typename_capitalized>Private)) 
+                                <prefix_capitalized><typename_capitalized>Private))
 
 static void <prefix_lower_case>_<typename_lower_case>_class_init (<prefix_capitalized><typename_capitalized>Class *);
 static void <prefix_lower_case>_<typename_lower_case>_init (<prefix_capitalized><typename_capitalized> *);
@@ -52,10 +50,10 @@ static void
 {
   <prefix_capitalized><typename_capitalized> *self = <prefix_upper_case>_<typename_upper_case>(gobject);
 
-  /* 
+  /*
    * In dispose, you are supposed to free all types referenced from this
    * object which might themselves hold a reference to self. Generally,
-   * the most simple solution is to unref all members on which you own a 
+   * the most simple solution is to unref all members on which you own a
    * reference.
    */
 
